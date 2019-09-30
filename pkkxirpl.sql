@@ -96,9 +96,9 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=396 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_pkk_xirpl.wp_options: ~341 rows (approximately)
+-- Dumping data for table db_pkk_xirpl.wp_options: ~342 rows (approximately)
 DELETE FROM `wp_options`;
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -446,7 +446,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 	(386, '_transient_timeout_jetpack_idc_allowed', '1569817735', 'no'),
 	(387, '_transient_jetpack_idc_allowed', '1', 'no'),
 	(389, '_transient_is_multi_author', '0', 'yes'),
-	(395, '_transient_wc_attribute_taxonomies', 'a:4:{i:0;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"1";s:14:"attribute_name";s:6:"camera";s:15:"attribute_label";s:6:"CAMERA";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:1;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"2";s:14:"attribute_name";s:3:"hdd";s:15:"attribute_label";s:3:"HDD";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:2;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"4";s:14:"attribute_name";s:2:"os";s:15:"attribute_label";s:2:"OS";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:3;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"3";s:14:"attribute_name";s:3:"ram";s:15:"attribute_label";s:3:"RAM";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}}', 'yes');
+	(395, '_transient_wc_attribute_taxonomies', 'a:4:{i:0;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"1";s:14:"attribute_name";s:6:"camera";s:15:"attribute_label";s:6:"CAMERA";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:1;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"2";s:14:"attribute_name";s:3:"hdd";s:15:"attribute_label";s:3:"HDD";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:2;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"4";s:14:"attribute_name";s:2:"os";s:15:"attribute_label";s:2:"OS";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}i:3;O:8:"stdClass":6:{s:12:"attribute_id";s:1:"3";s:14:"attribute_name";s:3:"ram";s:15:"attribute_label";s:3:"RAM";s:14:"attribute_type";s:6:"select";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}}', 'yes'),
+	(400, 'product_cat_children', 'a:0:{}', 'yes');
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 
 -- Dumping structure for table db_pkk_xirpl.wp_postmeta
@@ -654,9 +655,9 @@ CREATE TABLE IF NOT EXISTS `wp_termmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `term_id` (`term_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_pkk_xirpl.wp_termmeta: ~14 rows (approximately)
+-- Dumping data for table db_pkk_xirpl.wp_termmeta: ~29 rows (approximately)
 DELETE FROM `wp_termmeta`;
 /*!40000 ALTER TABLE `wp_termmeta` DISABLE KEYS */;
 INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
@@ -673,7 +674,22 @@ INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUE
 	(11, 26, 'order_pa_ram', '0'),
 	(12, 27, 'order_pa_ram', '0'),
 	(13, 28, 'order_pa_ram', '0'),
-	(14, 29, 'order_pa_ram', '0');
+	(14, 29, 'order_pa_ram', '0'),
+	(15, 30, 'order', '0'),
+	(16, 30, 'display_type', ''),
+	(17, 30, 'thumbnail_id', '0'),
+	(18, 31, 'order', '0'),
+	(19, 31, 'display_type', ''),
+	(20, 31, 'thumbnail_id', '0'),
+	(21, 32, 'order', '0'),
+	(22, 32, 'display_type', ''),
+	(23, 32, 'thumbnail_id', '0'),
+	(24, 33, 'order', '0'),
+	(25, 33, 'display_type', ''),
+	(26, 33, 'thumbnail_id', '0'),
+	(27, 34, 'order', '0'),
+	(28, 34, 'display_type', ''),
+	(29, 34, 'thumbnail_id', '0');
 /*!40000 ALTER TABLE `wp_termmeta` ENABLE KEYS */;
 
 -- Dumping structure for table db_pkk_xirpl.wp_terms
@@ -686,9 +702,9 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_pkk_xirpl.wp_terms: ~29 rows (approximately)
+-- Dumping data for table db_pkk_xirpl.wp_terms: ~34 rows (approximately)
 DELETE FROM `wp_terms`;
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -720,7 +736,12 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 	(26, '2GB', '2gb', 0),
 	(27, '4GB', '4gb', 0),
 	(28, '8GB', '8gb', 0),
-	(29, '16GB', '16gb', 0);
+	(29, '16GB', '16gb', 0),
+	(30, 'Notebook', 'notebook', 0),
+	(31, 'Photography', 'photography', 0),
+	(32, 'Smartphone', 'smartphone', 0),
+	(33, 'Software', 'software', 0),
+	(34, 'Tablet', 'tablet', 0);
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
 
 -- Dumping structure for table db_pkk_xirpl.wp_term_relationships
@@ -757,9 +778,9 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_pkk_xirpl.wp_term_taxonomy: ~29 rows (approximately)
+-- Dumping data for table db_pkk_xirpl.wp_term_taxonomy: ~34 rows (approximately)
 DELETE FROM `wp_term_taxonomy`;
 /*!40000 ALTER TABLE `wp_term_taxonomy` DISABLE KEYS */;
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -791,7 +812,12 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 	(26, 26, 'pa_ram', '', 0, 0),
 	(27, 27, 'pa_ram', '', 0, 0),
 	(28, 28, 'pa_ram', '', 0, 0),
-	(29, 29, 'pa_ram', '', 0, 0);
+	(29, 29, 'pa_ram', '', 0, 0),
+	(30, 30, 'product_cat', '', 0, 0),
+	(31, 31, 'product_cat', '', 0, 0),
+	(32, 32, 'product_cat', '', 0, 0),
+	(33, 33, 'product_cat', '', 0, 0),
+	(34, 34, 'product_cat', '', 0, 0);
 /*!40000 ALTER TABLE `wp_term_taxonomy` ENABLE KEYS */;
 
 -- Dumping structure for table db_pkk_xirpl.wp_usermeta
