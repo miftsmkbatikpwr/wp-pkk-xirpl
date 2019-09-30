@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   UNIQUE KEY `option_name` (`option_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=555 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_options: ~372 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_options: ~377 rows (approximately)
 DELETE FROM `wp_options`;
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -493,7 +493,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=215 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_postmeta: ~140 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_postmeta: ~143 rows (approximately)
 DELETE FROM `wp_postmeta`;
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -675,7 +675,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `post_author` (`post_author`)
 ) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_posts: ~25 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_posts: ~26 rows (approximately)
 DELETE FROM `wp_posts`;
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -719,7 +719,7 @@ CREATE TABLE IF NOT EXISTS `wp_termmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_termmeta: ~40 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_termmeta: ~43 rows (approximately)
 DELETE FROM `wp_termmeta`;
 /*!40000 ALTER TABLE `wp_termmeta` DISABLE KEYS */;
 INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
@@ -780,7 +780,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   KEY `name` (`name`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_terms: ~35 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_terms: ~36 rows (approximately)
 DELETE FROM `wp_terms`;
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -832,7 +832,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   KEY `term_taxonomy_id` (`term_taxonomy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_term_relationships: ~18 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_term_relationships: ~19 rows (approximately)
 DELETE FROM `wp_term_relationships`;
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -925,7 +925,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_usermeta: ~23 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_usermeta: ~22 rows (approximately)
 DELETE FROM `wp_usermeta`;
 /*!40000 ALTER TABLE `wp_usermeta` DISABLE KEYS */;
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -972,7 +972,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_users: ~0 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_users: ~1 rows (approximately)
 DELETE FROM `wp_users`;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
@@ -1162,7 +1162,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zones` (
   PRIMARY KEY (`zone_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_woocommerce_shipping_zones: ~0 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_woocommerce_shipping_zones: ~1 rows (approximately)
 DELETE FROM `wp_woocommerce_shipping_zones`;
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zones` DISABLE KEYS */;
 INSERT INTO `wp_woocommerce_shipping_zones` (`zone_id`, `zone_name`, `zone_order`) VALUES
@@ -1181,7 +1181,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_locations` (
   KEY `location_type_code` (`location_type`(10),`location_code`(20))
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table pkkxirpl.wp_woocommerce_shipping_zone_locations: ~0 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_woocommerce_shipping_zone_locations: ~1 rows (approximately)
 DELETE FROM `wp_woocommerce_shipping_zone_locations`;
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zone_locations` DISABLE KEYS */;
 INSERT INTO `wp_woocommerce_shipping_zone_locations` (`location_id`, `zone_id`, `location_code`, `location_type`) VALUES
@@ -1279,7 +1279,7 @@ CREATE TABLE IF NOT EXISTS `wp_yith_wcwl_lists` (
   KEY `wishlist_slug` (`wishlist_slug`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- Dumping data for table pkkxirpl.wp_yith_wcwl_lists: ~0 rows (approximately)
+-- Dumping data for table pkkxirpl.wp_yith_wcwl_lists: ~1 rows (approximately)
 DELETE FROM `wp_yith_wcwl_lists`;
 /*!40000 ALTER TABLE `wp_yith_wcwl_lists` DISABLE KEYS */;
 INSERT INTO `wp_yith_wcwl_lists` (`ID`, `user_id`, `wishlist_slug`, `wishlist_name`, `wishlist_token`, `wishlist_privacy`, `is_default`) VALUES
